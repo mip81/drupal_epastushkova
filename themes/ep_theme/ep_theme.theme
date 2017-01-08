@@ -1,0 +1,33 @@
+<?php
+/**
+ * @file
+ * Bootstrap sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+
+
+ /*
+  Add our name of the site because system
+  function doesn't work properly
+ */
+function ep_theme_preprocess_html(&$variables){
+
+  $variables['site_logo'] = "/themes/ep_theme/images/logo_sm.png";
+
+}
+
+function ep_theme_preprocess_block__system_branding_block(&$variables){
+    $variables['site_logo'] = "/themes/ep_theme/images/logo_sm.png";
+}
+
+// Send is_front variable to the title (for deleteing from the front page)
+function ep_theme_preprocess_page_title(&$variables){
+try{
+    $variables['is_front'] = \Drupal::service('path.matcher')->isFrontPage();
+}catch(Exception $e){
+  $variables['is_front'] = false;
+}
+
+
+}

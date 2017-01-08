@@ -1,0 +1,27 @@
+{#
+/**
+ * @file
+ * The template shows two column one has video from youtube
+ * and the second shows the content. Will be used in the main page.
+ * with Views
+ *
+ * Available variables:
+ * - ds_content_wrapper: wrapper around content
+ * - attributes: content region attributes
+ * - ds_content: content region
+ */
+#}
+{% set link = content.qn %}
+<div class="panel panel-success`">
+  <div class="panel-heading">
+   <h4 class="panel-title">
+      <a data-toggle="collapse" href="#{{ link }} " >{{ content.question }}<a>
+   </h4>
+  </div>
+<div id="{{ content.qn }}" class="panel-collapse collapse">
+  <div class="panel-body">
+    {{ content.answer }}
+  </div>
+</div>
+</div>
+

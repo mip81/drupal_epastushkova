@@ -1,0 +1,26 @@
+.priceTableHeader{
+		width: 350px;
+		text-align: center;
+		font-weight:bold;
+	}
+	.pricesInPriceTable{
+		text-align: center;
+		font-weight: bold;
+		border-bottom: lightgray dashed 1px;
+	}
+	.typesInPriceTable{
+		font-style: oblique;
+		font-weight:bold;
+		text-align: center;
+		padding-top: 10px;
+	}
+	.typeValuesInPriceTable{
+		border-bottom: lightgray dashed 1px;
+	}
+	.discountInPriceTable{
+		color: red;
+
+	}
+	.oldPriceInPriceTable{
+		text-decoration:  line-through;
+	}

@@ -1,0 +1,23 @@
+{#
+/**
+ * @file
+ * The template shows two column one has video from youtube
+ * and the second shows the content. Will be used in the main page.
+ * with Views
+ *
+ * Available variables:
+ * - ds_content_wrapper: wrapper around content
+ * - attributes: content region attributes
+ * - ds_content: content region
+ */
+#}
+<div class="row">
+  <div class="col-md-5">
+        <div style="color: #00A0E2; text-align: center; font-weight: bold;margin-bottom: 5px;">{{ content.videotitle }}</div>
+	{{ content.left }}	  
+</div>
+  <div class="col-md-7">
+    {{ content.right }}
+  </div>
+
+</div>
